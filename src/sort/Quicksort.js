@@ -6,9 +6,7 @@ ALGO.sort.Quicksort = function(array) {
       return [];
     }
 
-    var left = [],
-    rigth = [],
-    pivot = a[0];
+    var left = [], right = [], pivot = a[0];
 
     for (var i = 1; i < a.length; i++) {
       a[i] < pivot ? left.push(a[i]) : right.push(a[i]);
