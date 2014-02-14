@@ -1,9 +1,17 @@
 <html>
-	<head>
-		<title>Test</title>
-	</head>
-	<body>
-		<span>Quicksort</span>
-		<script src='../src/sort/Quicksort.js'></script>
-	</body>
+  <head>
+    <title>Tests</title>
+  </head>
+  <body>
+    <script src='../src/Algo.js'></script>
+    <script src='../src/sort/Quicksort.js'></script>
+    <div id='container'>
+      <span>Quicksort [67,32,12,100,5,8,33,23,56] = </span>
+      <script>
+        var result = ALGO.sort.Quicksort.sort([67,32,12,100,5,8,33,23,56]);
+        var el = document.getElementById('container');
+        el.innerHTML = el.innerHTML + result;
+      </script>
+    </div>
+  </body>
 </html>

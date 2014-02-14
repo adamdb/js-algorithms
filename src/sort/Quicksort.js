@@ -1,7 +1,7 @@
-var ALGO = ALGO || {};
-ALGO.sort = ALGO.sort || {};
-ALGO.sort.Quicksort = function(array) {
-  var qsort = function(a) {
+ALGO.namespace('sort.Quicksort');
+
+ALGO.sort.Quicksort = (function() {
+  var sort = function(a) {
     if (a.length === 0) {
       return [];
     }
@@ -12,8 +12,10 @@ ALGO.sort.Quicksort = function(array) {
       a[i] < pivot ? left.push(a[i]) : right.push(a[i]);
     }
 
-    return qsort(left).concat(pivot, qsort(right));
+    return sort(left).concat(pivot, sort(right));
   };
 
-  return qsort(array);
-};
+  return {
+    sort: sort
+  };
+}());
