@@ -1,6 +1,6 @@
-ALGO.namespace('sort.Mergesort');
+algo.namespace('sort.Mergesort');
 
-ALGO.sort.Mergesort = (function() {
+algo.sort.Mergesort = (function() {
   var mergesort = function(a) {
     if (a.length === 1) {
       return a;

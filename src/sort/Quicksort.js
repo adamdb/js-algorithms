@@ -1,6 +1,6 @@
-ALGO.namespace('sort.Quicksort');
+algo.namespace('sort.Quicksort');
 
-ALGO.sort.Quicksort = (function() {
+algo.sort.Quicksort = (function() {
   var sort = function(a) {
     if (a.length === 0) {
       return [];

@@ -1,12 +1,12 @@
-var ALGO = ALGO || {};
+var algo = algo || {};
 
 (function() {
-  ALGO.namespace = function(nsString) {
+  algo.namespace = function(nsString) {
     var parts = nsString.split('.'),
-        parent = ALGO,
+        parent = algo,
         i;
 
-    if (parts[0] === 'ALGO') {
+    if (parts[0] === 'algo') {
       parts = parts.slice(1);
     }
 
