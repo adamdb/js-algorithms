@@ -3,16 +3,16 @@
     <title>Tests</title>
   </head>
   <body>
-    <script src='../src/Algo.js'></script>
-    <script src='../src/sort/Quicksort.js'></script>
-    <script src='../src/sort/Mergesort.js'></script>
-    <div id='container'>
-      <span>Quicksort [67,32,12,100,5,8,33,23,56] = </span>
-      <script>
-        var result = ALGO.sort.Quicksort.sort([67,32,12,100,5,8,33,23,56]);
-        var el = document.getElementById('container');
-        el.innerHTML = el.innerHTML + result;
-      </script>
-    </div>
+    <script src='../src/algo.js'></script>
+    <script src='../src/Quickfind.js'></script>
+    <script>
+      var qf = new algo.Quickfind(10);
+      qf.union(2, 9);
+      qf.union(9, 3);
+      qf.union(3, 0);
+      qf.union(7, 8);
+      qf.union(6, 3);
+      qf.union(0, 1);
+    </script>
   </body>
 </html>
