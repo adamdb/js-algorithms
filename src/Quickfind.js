@@ -1,9 +1,9 @@
 algo.namespace('Quickfind');
 
-algo.Quickfind = function(size) {
+algo.Quickfind = function(n) {
   this.id = [];
 
-  for (var i = 0; i < size; i++) {
+  for (var i = 0; i < n; i++) {
     this.id[i] = i;
   }
 };
