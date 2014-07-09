@@ -8,6 +8,7 @@
     <script src='../src/Quickfind.js'></script>
     <script src='../src/Quickunion.js'></script>
     <script src='../src/BinarySearch.js'></script>
+    <script src='../src/LinkedList.js'></script>
     <script>
       var qf = new algo.Quickfind(10);
       qf.union(2, 9);
@@ -31,6 +32,12 @@
 
       var bs = new algo.BinarySearch([1,2,3,4,5,6,7,8,9,10,11,12,13,56,67,68,69,89,90,91,100]);
       console.log(bs.search(11));
+
+      var ll = new algo.LinkedList();
+      ll.push('a');
+      ll.push('b');
+      ll.push('c');
+      console.log(ll.pop());
     </script>
   </body>
 </html>
