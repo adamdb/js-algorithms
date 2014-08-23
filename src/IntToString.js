@@ -1,11 +1,13 @@
 'use strict';
 
+algo.namespace('IntToString');
+
 algo.IntToString = function(int) {
   var proto = algo.IntToString.prototype;
-  
+
   this.digits = [];
   this.length = proto.getLength(int);
-  
+
   for (var i = this.length; i > 0; i--) {
     this.length = this.length - 1;
 
